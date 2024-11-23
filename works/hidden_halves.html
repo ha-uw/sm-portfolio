@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidden Halves</title>
+  <meta name="author" content="RACPO">
+  <meta name="description" content="A visual representation of hidden halves using CSS and HTML.">
+
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .frame {
+      position: relative;
+      height: 600px;
+      width: 800px;
+      background-color: #37212D;
+      align-content: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .box {
+      position: relative;
+      overflow: hidden;
+      height: 250px;
+      width: 250px;
+      background-color: #BCE6E9;
+    }
+
+    .box-left {
+      background-color: #76608A;
+    }
+
+    .box-right {
+      background-color: #EE9B99;
+    }
+
+    .circle {
+      border-radius: 50%;
+    }
+
+    .c-left-top {
+      position: absolute;
+      background-color: #EE9B99;
+      height: 200%;
+      width: 200%;
+    }
+
+    .c-left-bottom {
+      position: absolute;
+      background-color: #BCE6E9;
+      height: 100%;
+      width: 100%;
+      translate: 0 50%;
+    }
+
+    .c-right-top {
+      position: absolute;
+      background-color: #BCE6E9;
+      height: 200%;
+      width: 200%;
+      translate: -50%;
+    }
+
+    .c-right-bottom {
+      position: absolute;
+      background-color: #76608A;
+      height: 100%;
+      width: 100%;
+      translate: -50%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="frame">
+    <div class="container">
+      <div class="box box-left">
+        <div class="circle c-left-top"></div>
+        <div class="circle c-left-bottom"></div>
+      </div>
+      <div class="box box-right">
+        <div class="circle c-right-top"></div>
+        <div class="circle c-right-bottom"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

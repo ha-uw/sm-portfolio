@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Another Note</title>
+  <meta name="author" content="RACPO">
+  <meta name="description" content="A reminder of what's important.">
+
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .frame {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+      width: 800px;
+      background-color: #FADE8B;
+    }
+
+    .note {
+      overflow: hidden;
+      position: relative;
+      height: 400px;
+      width: 400px;
+    }
+
+
+    .square {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      background-color: #61A74E;
+    }
+
+    .s-2 {
+      left: 200px;
+    }
+
+    .s-3 {
+      top: 200px;
+    }
+
+    .ear {
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 200px 200px 0 0;
+      border-color: #3F7331 transparent transparent transparent;
+      transform: rotate(0deg);
+      top: 200px;
+      left: 200px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="frame">
+    <div class="note">
+      <div class="square s-1"></div>
+      <div class="square s-2"></div>
+      <div class="square s-3"></div>
+      <div class="ear">
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

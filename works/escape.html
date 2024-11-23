@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape</title>
+  <meta name="author" content="RACPO">
+  <meta name="description" content="Come in. Space.">
+
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background: #984842;
+    }
+
+    .frame {
+      position: relative;
+      background-color: #ECD5E4;
+      height: 600px;
+      overflow: hidden;
+      min-width: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+
+    .t-l {
+      position: absolute;
+      top: -140px;
+      left: -80px;
+    }
+
+    .t-r {
+      position: absolute;
+      top: -140px;
+      ;
+      right: -80px;
+      ;
+    }
+
+    .b-l {
+      position: absolute;
+      bottom: -140px;
+      ;
+      left: -80px;
+      ;
+    }
+
+    .b-r {
+      position: absolute;
+      bottom: -140px;
+      right: -80px;
+    }
+
+    .center {
+      width: 360px;
+      height: 180px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="frame">
+    <div class="t-l"></div>
+    <div class="t-r"></div>
+    <div class="b-l"></div>
+    <div class="b-r"></div>
+    <div class="center"></div>
+  </div>
+
+</body>
+
+</html>
